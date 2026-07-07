@@ -77,7 +77,31 @@ export default function App() {
             <Arc logsByDate={logsByDate} />
           ) : (
             <div className="empty-state">Log a few days to see your Arc take shape.</div>
-          )}
+          )} <footer style={{
+  textAlign: 'center',
+  padding: '24px 16px',
+  fontSize: '13px',
+  color: '#888',
+  borderTop: '1px solid #eee',
+  marginTop: '40px'
+}}>
+  
+    href="https://github.com/arayaaddiss1-svg/solstice/blob/main/legal/PRIVACY_POLICY.md"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ color: '#888', textDecoration: 'underline', marginRight: '16px' }}
+  >
+    Privacy Policy
+  </a>
+  
+    href="https://github.com/arayaaddiss1-svg/solstice/blob/main/legal/TERMS_OF_SERVICE.md"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ color: '#888', textDecoration: 'underline' }}
+  >
+    Terms of Service
+  </a>
+</footer>
         </div>
       )}
 
