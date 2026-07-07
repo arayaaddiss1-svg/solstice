@@ -87,6 +87,21 @@ export default function App() {
       <footer style={{ textAlign: 'center', padding: '24px 16px', fontSize: '13px', color: '#888', borderTop: '1px solid #eee', marginTop: '40px' }}>
         <a href="https://github.com/arayaaddiss1-svg/solstice/blob/main/legal/PRIVACY_POLICY.md" target="_blank" rel="noopener noreferrer" style={{ color: '#888', textDecoration: 'underline', marginRight: '16px' }}>Privacy Policy</a>
         <a href="https://github.com/arayaaddiss1-svg/solstice/blob/main/legal/TERMS_OF_SERVICE.md" target="_blank" rel="noopener noreferrer" style={{ color: '#888', textDecoration: 'underline' }}>Terms of Service</a>
+      {/* Product Hunt Badge */}
+<div className="flex justify-center mt-8">
+  <a 
+    href="https://www.producthunt.com/products/vault-a-private-ledger-for-your-subs?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-vault-a-private-ledger-for-your-subs" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <img 
+      alt="Vault a private ledger for your subs - A private subscription tracker — no bank link required | Product Hunt" 
+      width="250" 
+      height="54" 
+      src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1189303&theme=dark&t=1783417129574"
+    />
+  </a>
+</div>
       </footer>
     </div>
   )
