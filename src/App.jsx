@@ -9,7 +9,7 @@ import DoctorReport from './components/DoctorReport'
 const TABS = ['Today', 'The Arc', 'Patterns', 'Doctor report']
 
 export default function App() {
-  const [session, setSession] = useState(undefined) // undefined = loading, null = signed out
+  const [session, setSession] = useState(undefined)
   const [logs, setLogs] = useState([])
   const [tab, setTab] = useState('Today')
 
@@ -84,30 +84,9 @@ export default function App() {
       {tab === 'Patterns' && <Insights logs={logs} />}
       {tab === 'Doctor report' && <DoctorReport logs={logs} />}
 
-      <footer style={{
-        textAlign: 'center',
-        padding: '24px 16px',
-        fontSize: '13px',
-        color: '#888',
-        borderTop: '1px solid #eee',
-        marginTop: '40px'
-      }}>
-        
-          href="https://github.com/arayaaddiss1-svg/solstice/blob/main/legal/PRIVACY_POLICY.md"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ color: '#888', textDecoration: 'underline', marginRight: '16px' }}
-        >
-          Privacy Policy
-        </a>
-        
-          href="https://github.com/arayaaddiss1-svg/solstice/blob/main/legal/TERMS_OF_SERVICE.md"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ color: '#888', textDecoration: 'underline' }}
-        >
-          Terms of Service
-        </a>
+      <footer style={{ textAlign: 'center', padding: '24px 16px', fontSize: '13px', color: '#888', borderTop: '1px solid #eee', marginTop: '40px' }}>
+        <a href="https://github.com/arayaaddiss1-svg/solstice/blob/main/legal/PRIVACY_POLICY.md" target="_blank" rel="noopener noreferrer" style={{ color: '#888', textDecoration: 'underline', marginRight: '16px' }}>Privacy Policy</a>
+        <a href="https://github.com/arayaaddiss1-svg/solstice/blob/main/legal/TERMS_OF_SERVICE.md" target="_blank" rel="noopener noreferrer" style={{ color: '#888', textDecoration: 'underline' }}>Terms of Service</a>
       </footer>
     </div>
   )
